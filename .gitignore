@@ -2,5 +2,6 @@ build
 client/lib/contracts
 node_modules
 backend
+package-lock.json
 .vscode
 .env
