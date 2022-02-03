@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard",
+    "ganache": "npx ganache-cli --networkId 1337 --chainId 1337 --port 8545 -m 'census blame faint universe one code fit father cereal tomato prepare excuse door extend that race forest weekend dynamic ginger visual love wood saddle'",
     "gsn": "gsn start"
   },
   "standard": {
@@ -30,6 +31,7 @@
     "@opengsn/contracts": "^2.2.4",
     "@openzeppelin/contracts": "^4.3.2",
     "dotenv": "^10.0.0",
+    "ganache-cli": "^6.12.2",
     "truffle-hdwallet-provider": "^1.0.17"
   }
 }
