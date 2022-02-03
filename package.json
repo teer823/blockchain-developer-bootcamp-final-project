@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "lint": "standard",
-    "ganache": "npx ganache-cli --networkId 1337 --chainId 1337 --port 8545 -m 'census blame faint universe one code fit father cereal tomato prepare excuse door extend that race forest weekend dynamic ginger visual love wood saddle'",
-    "gsn": "gsn start"
+    "ganache": "export NODE_OPTIONS=--openssl-legacy-provider && npx ganache-cli --networkId 1337 --chainId 1337 --port 8545 -m 'census blame faint universe one code fit father cereal tomato prepare excuse door extend that race forest weekend dynamic ginger visual love wood saddle'",
+    "gsn": "export NODE_OPTIONS=--openssl-legacy-provider && gsn start",
+    "compile": "export NODE_OPTIONS=--openssl-legacy-provider && truffle compile --all",
+    "migrate": "export NODE_OPTIONS=--openssl-legacy-provider && truffle migrate --reset"
   },
   "standard": {
     "parser": "babel-eslint",
